@@ -42,14 +42,35 @@ class ShapeFactory {
     basicEnemy = createShape(GROUP);
     PShape Speeder = createShape();
     Speeder.beginShape();
-    Speeder.fill(255, 0, 0);
-    Speeder.vertex(-20, -10);
-    Speeder.vertex(-20, 10);
-    Speeder.vertex(20, 10);
-    Speeder.vertex(20, -10);
+    Speeder.fill(152,152,152);
+    Speeder.vertex(10,-60);
+    Speeder.vertex(-10,-60);
+    Speeder.vertex(-10,-75);
+    Speeder.vertex(-20,-75);
+    Speeder.vertex(-20,-60);
+    Speeder.vertex(-30,-60);
+    Speeder.vertex(0,50);
+    Speeder.vertex(30,-60);
+    Speeder.vertex(20,-60);
+    Speeder.vertex(20,-75);
+    Speeder.vertex(10,-75);
+    Speeder.vertex(10,-60);
+    PShape Cockpit = createShape();
+    Cockpit.beginShape();
+    Cockpit.fill(112,112,112);
+    Cockpit.vertex(5,-60);
+    Cockpit.vertex(5,-50);
+    Cockpit.vertex(15,-50);
+    Cockpit.vertex(15,-40);
+    Cockpit.vertex(-15,-40);
+    Cockpit.vertex(-15,-50);
+    Cockpit.vertex(-5,-50);
+    Cockpit.vertex(-5,-60);
+    Cockpit.endShape();
     basicEnemy.addChild(Speeder);
+    basicEnemy.addChild(Cockpit);
     Speeder.endShape();
-    PShape Cockpit = createShape(ELLIPSE, -10, -15, 20, 30);
+  
   }
 }
 

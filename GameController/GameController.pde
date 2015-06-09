@@ -12,7 +12,7 @@ void setup() {
 }
 
 void draw() {
-  background(0);
+  background(255);
   shape(Cadet, mouseX, mouseY);
   shape(enemy, 100, 100);
 }
